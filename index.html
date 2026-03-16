@@ -1,26 +1,129 @@
 <!-- Commit update for GitHub Pages -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<title>Adding CSS Activities</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Activities & Pricing</title>
 
 <!-- Internal CSS -->
 <style>
-.red{
-  color:red;
-}
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  /* Activity 2 Internal CSS */
+  .red {
+    color: red;
+  }
+
+  .green {
+    color: green;
+  }
+
+  /* Flexbox Activity */
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+
+  .box {
+    background-color: #007bff;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .box2 {
+    background-color: #28a745;
+  }
+
+  .box3 {
+    background-color: #ffc107;
+    color: black;
+  }
+
+  .box4 {
+    background-color: #dc3545;
+  }
+
+  /* Pricing Plans */
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .card h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .features li {
+    margin: 10px 0;
+  }
+
+  .signup-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .signup-btn:hover {
+    background-color: #0056b3;
+  }
 </style>
 
-<!-- External CSS -->
-<link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-<h1>Three Methods of Adding CSS</h1>
+<h1>CSS Activities</h1>
 
 <!-- Activity 1 -->
 <h2>Activity 1: Inline CSS</h2>
@@ -36,16 +139,52 @@
 
 <!-- Flexbox Activity -->
 <h2>Activity 4: CSS Flexbox</h2>
-
 <div class="container">
-<div class="box box1">1</div>
-<div class="box box2">2</div>
-<div class="box box3">3</div>
-<div class="box box4">4</div>
+  <div class="box box1">1</div>
+  <div class="box box2">2</div>
+  <div class="box box3">3</div>
+  <div class="box box4">4</div>
+</div>
+
+<!-- Pricing Plans Section -->
+<h1>Pricing Plans</h1>
+<div class="pricing-container">
+  <!-- Basic Plan -->
+  <div class="card">
+    <h2>Basic</h2>
+    <div class="price">$9.99/month</div>
+    <ul class="features">
+      <li>✅ 10GB Storage</li>
+      <li>✅ 1 User</li>
+      <li>🚫 Support</li>
+    </ul>
+    <a href="#" class="signup-btn">Sign Up</a>
+  </div>
+
+  <!-- Standard Plan -->
+  <div class="card">
+    <h2>Standard</h2>
+    <div class="price">$19.99/month</div>
+    <ul class="features">
+      <li>✅ 50GB Storage</li>
+      <li>✅ 5 Users</li>
+      <li>✅ Phone & Email Support</li>
+    </ul>
+    <a href="#" class="signup-btn">Sign Up</a>
+  </div>
+
+  <!-- Premium Plan -->
+  <div class="card">
+    <h2>Premium</h2>
+    <div class="price">$49.99/month</div>
+    <ul class="features">
+      <li>✅ 100GB Storage</li>
+      <li>✅ 10 Users</li>
+      <li>✅ 24/7 Support</li>
+    </ul>
+    <a href="#" class="signup-btn">Sign Up</a>
+  </div>
 </div>
 
 </body>
 </html>
-
-
-
